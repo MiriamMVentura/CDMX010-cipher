@@ -1,29 +1,16 @@
 :root {
-  background-color:#010101;
+  background-color:#6b5eba;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
-  color: white;
-  text-align: center;
-}
-
-main{
-  text-align: center;
-  font-size: 20px;
-  color: white;
-}
-
-footer{
-  text-align:inherit;
-  font-size: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .contenido {
-  background: #00231D;
+  background: #6b5ebaff;
   border: none;
   border-radius: 10px;
   width: 70vw;
-  height: 100vh;
+  height: 110vh;
   /*display: flex;*/
   justify-content: center;
   align-items: center;
@@ -34,7 +21,7 @@ footer{
 }
 
 .textareas {
-  background: #153449;
+  background: #58a7b6ff;
   border: none;
   border-radius: 10px;
   flex: 1;
@@ -45,49 +32,46 @@ footer{
   resize: none;
   /*white-space: pre-wrap;*/
   width: 50%;
-  height: 4;
   z-index: 1;
   direction: ltr;
   font-size: 20px;
 }
-
-.codedecode {
-  font-size: 18px;
-  text-decoration: none;
-  color: rgb(247, 241, 241);
-  padding: 0.5rem;
-  width: 5rem;
-  text-align: center;
+.desplazamiento {
+  background: #58a7b6ff;
   border: none;
-  background: #047F86;
-  border-radius: 4px;
+  border-radius: 10px;
+  flex: 1;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  resize: none;
+  font-size: 20px;
+  height: 40px;
 }
 
-.codedecode:hover {
-  cursor: pointer;
-  transform: scale(1.03);
-}
-
+.codedecode,
 .interaction {
   font-size: 18px;
   text-decoration: none;
   color: rgb(247, 241, 241);
+  font-family: 'Montserrat', sans-serif;
   padding: 0.5rem;
   width: 5rem;
   text-align: center;
   border: none;
-  background: #047F86;
+  background: #c18f94ff;
   border-radius: 4px;
-  content: "\f182";
 }
 
-.interaction:hover {
+.codedecode:hover,
+.interaction:hover{
   cursor: pointer;
   transform: scale(1.03);
 }
+
 .mensajecopiado {
-  background: #010101c9;
-  color: #047F86;
+  background: #75c3cd83;
+  color: #f0bdce;
   position: absolute;
   top: 0;
   left: 0;
@@ -105,4 +89,38 @@ footer{
   visibility: visible;
   opacity: 1;
   transition: opacity .6s ;
+}
+
+.icon{
+  color: #ffffff;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 0px 28px;
+  font-size: 25px;
+}
+
+.icon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.social-bar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: normal;
+  flex-wrap:nowrap;
+  padding: 0rem;
+}
+
+.footer-copyright{
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
+  line-height: 30px;
+  letter-spacing: -.02em;
+  font-weight: 500;
+  opacity: .5;
 }

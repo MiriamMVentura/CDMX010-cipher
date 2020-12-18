@@ -43,6 +43,12 @@ describe('cipher', () => {
     expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
     });
 
+    it('should return "5678901234" for "0123456789" with offset 5', () => {
+    expect(cipher.encode(5, '0123456789')).toBe('5678901234');
+    });
+
+
+
     // Hacker edition
     //
     // [Español]

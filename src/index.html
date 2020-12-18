@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=500, initial-scale=1">
-    <title>Caesar Cipher</title>
+    <title>Iris Cipher</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="font.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div id="root">
-        <h1>Cifrado</h1>
-        <h5>mensajes más seguros</h5>
+        <h1>Iris Cipher</h1>
+        <h5>protege tus secretos</h5>
       </div>
     </header>
 
@@ -19,12 +20,12 @@
       <div class="contenido">
         <article>
           <p>Escribe tu mensaje</p>
-          <textarea name="message" id="message" class="textareas" maxlength="100" rows="7" cols="40" placeholder="ABC..."></textarea>
+          <textarea name="message" id="message" class="textareas" maxlength="150" rows="6" cols="40" placeholder="ABC..."></textarea>
         </article>
 
         <article>
           <p># de seguridad</p>
-          <input type="number" id="displacement" placeholder="#" name="displacement" min="1" max="99">
+          <input type="number" class= "desplazamiento" id="displacement" placeholder="#" name="displacement" min="1" max="99">
           <br>
           <br>
           <button type="submit" class="codedecode" id="btn1">Cifrar</button>
@@ -32,13 +33,13 @@
         </article>
 
         <article>
-          <p>Tu mensaje secreto</p>
-          <textarea name="message2" id="result" class="textareas" maxlength="100" rows="7" cols="40" placeholder="..."></textarea>
+          <p>Tu mensaje secreto es:</p>
+          <textarea name="message2" id="result" class="textareas" maxlength="150" rows="6" cols="40" placeholder="..."></textarea>
         </article>
 
         <article>
-          <button onclick ="refrescar()" class="interaction" id="btn3">Borrar</button>
-          <button type="submit" class="interaction" id="btn4">Copiar</button>
+          <button type="submit" class="interaction" id="btn3">Copiar</button>
+          <button type ="submit" class="interaction" id="btn4">Borrar</button>
         </article>
       </div>
       <div class="mensajecopiado">
@@ -46,7 +47,12 @@
       </div>
     </main>
     <footer>
-      <p>2020 by Miriam</p>
+      <div class="social-bar">
+        <a href="https://github.com/MiriamMVentura" class="icon icon-github"></a>
+        <a href="https://www.linkedin.com/in/miriammventura/" class="icon icon-linkedin"></a>
+        <a href="mailto:miriamartv@gmail.com" class="icon icon-envelop"></a>
+    </div>
+    <div class="footer-copyright">© 2020 Miriam MVentura</div>
     </footer>
     <script src="index.js" type="module"></script>
     <script src="cipher.js"></script>

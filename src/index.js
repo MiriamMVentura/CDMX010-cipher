@@ -8,8 +8,6 @@ let numDespl= document.getElementById('displacement');// input donde se escoge #
 let btnCif = document.getElementById('btn1'); //botón para cifrar
 let btnDescif = document.getElementById('btn2');//botón para descifrar
 
-//let btnDelete  = document.getElementById('btn3');//boton para limpiar espacios de texto
-//let btnCopy = document.getElementById('btn4'); // botón para copiar mensaje
 
 //evento DOM: al hacer click en el botón "cifrar" tomará los valores necesarios para ejecutar la función "encode"//
 btnCif.addEventListener('click', cifrar); //haciendo click ejecutara la función cifrar
@@ -22,6 +20,7 @@ function cifrar(){
   document.getElementById('result').innerHTML = cipher.encode(offset, texto);// resultante de "encode" se muestre en textarea
 }
 
+
 //evento DOM: al hacer click en el botón "cifrar" tomará los valores necesarios para ejecutar la función "encode"//
 btnDescif.addEventListener('click', descifrar); //boton haciendo click ejecutara la función cifrar
 function descifrar(){  //definiendo función descifrar
@@ -33,15 +32,12 @@ function descifrar(){  //definiendo función descifrar
   document.getElementById('result').innerHTML = cipher.decode(offsetDescif, textoMensaje);// resultante de "decode" se muestre en textarea
 }
 
-//agragando funciones de usabilidad usuario
-let btnDelete  = document.getElementById('btn3');//boton para limpiar espacios de texto
-btnDelete.addEventListener('click', refrescar);
-function refrescar (){
-  location.reload();
-}
+
+// agrgando botónes de usabilidad copiar y borrar
+//let btnCopy = document.getElementById('btn4'); // botón para copiar mensaje
 
 const elemento = document.querySelector('#result');
-document.querySelector('#btn4').addEventListener('click', ()=>{
+document.querySelector('#btn3').addEventListener('click', ()=>{
   document.querySelector('.mensajecopiado').classList.add('show');
   copyToClipBoard(elemento);
   setTimeout(()=>{
@@ -58,3 +54,9 @@ function copyToClipBoard(){
   document.body.removeChild(inputOculto); //removemos el elemento agregado a nuestro documento
 }
 
+//agregando botón de refrescar pagina
+let btnDelete  = document.getElementById('btn4');//boton para limpiar espacios de texto
+btnDelete.addEventListener('click', refrescar);
+function refrescar (){
+  location.reload();
+}
