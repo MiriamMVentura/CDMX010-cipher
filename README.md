@@ -263,41 +263,42 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 8. A codear se ha dicho! :rocket:
 
 ## PRESENTACIÓN
-“Nombre APP” está pensado y diseñado para personas que requieren compartir mensajes, textos o numeros de carácter confidencial o secreto.
-Al usar “Nombre APP”, el usuario mantiene sus datos personales seguros ya que esta aplicación es de uso libre, no hay necesidad de registrarse o iniciar sesión de algún tipo.
-En pocos pasos, el usuario de “Nombre app” podrá escribir un mensaje cifrado listo para compartir, también podrá descifrar los mensajes cifrados que otro usuario le haya enviado.
+**Iris Cipher** está pensado y diseñado para personas que requieren compartir mensajes con textos o numeros de carácter secreto o confidencial.
+Al usar **Iris Cipher**, el usuario mantiene sus datos personales seguros ya que esta aplicación es de uso libre, no hay necesidad de registrarse o iniciar sesión de algún tipo.
+En pocos pasos, el usuario de **Iris Cipher** podrá escribir un mensaje cifrado listo para compartir, también podrá descifrar los mensajes cifrados que otro usuario le haya enviado.
 
 ### DEMO
 Pasos para ejecutar la aplicación
+1. Escribe tu mensaje en el primer campo ("ABC...").
+2. Escoge un numero de seguridad para cifrar tu mensaje, recuerda compartirlo solo a quien quieras que lea tu mensaje.
+3. Pulsa el botón cifrar o descifrar según sea el caso.
+4. Tu mensaje esta listo, puedes copiarlo directo a tu portapapeles y compartirlo a quien queiras.
 
-## PROCESO DE DESARROLLO "nombre App"
+## PROCESO DE DESARROLLO "Iris Cipher"
 ### Investigación
 ¿Quiénes son los principales usuarios de producto?
 
 * Personas preocupadas por el uso de sus datos personales al tener que registrarse en una pagina más.
-* Personas en edad adulta que maneja números de celular, cuentas de correo (personal y/o laboral), cuentas bancarias, números de seguridad social, diversas afiliaciones... que por algún motivo debe compartirlos a través de un mensaje escrito.
-* Personas encargadas de recabar información personal o sensible.
 * Público general que requiera mandar mensajes secretos.
+* Personas en edad adulta que maneja números de celular, cuentas de correo (personal y/o laboral), cuentas bancarias, números de seguridad social, diversas afiliaciones... que por algún motivo debe compartirlos a través de un mensaje escrito.
 
 ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
 
+* Seguridad y privacidad para comunicarse a traves de mensajes.
 * Mantener seguros los datos personales que tenga que compartir por texto.
 * Cifrar y descifrar mensajes o textos con rapidez y eficiencia.
-* Que pueda copiar el texto cifrado o descifrado para poder compartirlo.
-* Seguridad y privacidad para comunicarse.
 * Evitar suscripción o registro para usar la app
+* Que pueda copiar el texto cifrado o descifrado para poder compartirlo con solo un botón.
 
 ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 
-“Nombre APP” está pensado y diseñado para personas que requieren comunicar o compartir mensajes, números o textos de carácter confidencial o secreto.
-Al usar “Nombre APP”, el usuario mantiene sus datos personales seguros ya que esta aplicación es de uso libre, no hay necesidad de registrarse o iniciar sesión de algún tipo.
-En pocos pasos, el usuario de “Nombre app” podrá escribir un mensaje cifrado listo para compartir, también podrá descifrar mensajes cifrados que le haya enviado otro usuario.
-
+**Iris Cipher** está diseñado de manera que los usuarios no necesitan suscribirse o resgistrarse para comenzar a usar la aplicación.
+Al ejegir un numero de seguridad, el usuario esta codificando su mensaje.
 
 ### IDEACIÓN
 * Esquematizar
-Haciendo un prototipo en papel sobre cómo iba a ser el proceso del cifrado y descifrado de un mensaje de texto identifiqué los elementos básicos: input para ingresar texto, otro para ver el mensaje cifrado o descifrado, uno más para elegir el número de desplazamiento; también botones de cifrado y descifrado.
-Ubicándolos en el espacio identifiqué los elementos semánticos en el HTML.
+Haciendo un prototipo en papel sobre cómo iba a ser el proceso del cifrado y descifrado de un mensaje de texto identifiqué los elementos básicos: Textareas para ingresar texto y para recibir el mensaje cifrado o descifrado, un imput para elegir el número de desplazamiento, también botones de cifrado y descifrado.
+Ubicándolos en el espacio según el flujo de las acciones, identifiqué los elementos semánticos en el HTML.
 
 
 (insertar imagen del primer boceto)
@@ -305,22 +306,39 @@ Ubicándolos en el espacio identifiqué los elementos semánticos en el HTML.
 
 * Procesando la investigación
 Tratando de hacer que la app diera menor esfuerzo e inmediatez al usuario busque referencias de aplicaciones similares, encontré similitudes con los de traducción donde el formato es horizontal e integran otras funciones de usabilidad como que el usuario pueda borrar, copiar o/o compartir.
-En un segundo prototipo (Wireframe) adecue el diseño a una ubicación horizontal de los elementos que ya tenía identificados incluyendo los de usabilidad para copias, borrar y compartir.
-
+En un segundo prototipo (Wireframe) adecue el diseño a una ubicación horizontal de los elementos que ya tenía identificados incluyendo los de usabilidad para copiar, borrar y compartir.
 
 (Insertar imagen 2do prototipo con colores)
 
 * Iteración
 Solicitando Feedback sobre el wireframe maquetado a un usuario que no ha seguido este proyecto, encontré que:
-  - si bien este diseño da una inmediatez al usuario para escribir y obtener un mensaje, le resta sensación de interacción con la app y que podría estar en una aplicación antigua.
+  - si bien este diseño da una inmediatez al usuario para escribir y obtener un mensaje, da la sensación que solo puede ser usada unicamente en computadora de escritorio.
   - Sugerencia de cuidado en la percepción de figuras y fondo.
   -	Uso de elementos visuales descriptivos (iconos) en las funciones de borrar, copiar y compartir.
   -	Alineación y equilibrio armónico de los elementos en el espacio.
   -	Equilibrio armónico de los colores.
-  -	Le gustaría ver un poco del mensaje que está cifrando.
   - Le gustaría confirmación para saber que copio a su portapapeles el mensaje final.
+  - Colores más calidos y para tono juvenil y amigable.
+  - no hay un nombre de La aplicación
 
   ### PROTOTIPADO
+Tomando en cuenta los comentarios en la iteración, para definir la paleta de color y el nombre de la aplicación pensé en arquetipos de comunicación, el principal fue el de Dioses mensajeros, tomé el de la Diosa "iris" de la mitología griega, se hizo el cambio a una paleta de color más acorde al nombre y tono de la app.
+Iris --> arcoiris, iridiscente.
+Volvi al diseño inicial en vertical:
+
+Insertar imagen wireframe 3
+
+Añadí una landing page para presentar la aplicación y los beneficios de uso.
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,16 +1,24 @@
 :root {
   background-color:#6b5eba;
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
 }
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 0rem;
+
+}
+
 
 .contenido {
   background: #6b5ebaff;
   border: none;
   border-radius: 10px;
   width: 70vw;
-  height: 110vh;
+  height: 100vh;
   /*display: flex;*/
   justify-content: center;
   align-items: center;
@@ -28,7 +36,7 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   /*overflow: auto hidden;*/
-  padding: 0;
+  padding: 0px;
   resize: none;
   /*white-space: pre-wrap;*/
   width: 50%;
@@ -55,7 +63,8 @@
   text-decoration: none;
   color: rgb(247, 241, 241);
   font-family: 'Montserrat', sans-serif;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem;
+
   width: 5rem;
   text-align: center;
   border: none;
@@ -71,7 +80,7 @@
 
 .mensajecopiado {
   background: #75c3cd83;
-  color: #f0bdce;
+  color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
@@ -120,7 +129,7 @@
   justify-content: flex-end;
   padding: 10px 30px;
   line-height: 30px;
-  letter-spacing: -.02em;
+  letter-spacing: -.02rem;
   font-weight: 500;
   opacity: .5;
 }

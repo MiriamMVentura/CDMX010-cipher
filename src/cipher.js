@@ -4,7 +4,6 @@ const cipher = {
     if (!offset){// falsy : undefined | null | 0 | "" | ''
       throw new TypeError("Tu input es invalido")
     }
-
     let textynum = "";//tomando valores que capturamos (indefinidos)
     for (let i = 0; i< texto.length; i++) {
       let ascii = texto.charCodeAt(i);
@@ -14,9 +13,12 @@ const cipher = {
       else if (ascii >= 97 && ascii <= 122) {  //minusculas
         ascii = (ascii - 97 + offset) % 26 + 97;
       }
-      else if (ascii >= 48 && ascii <= 122) { // números
+      else if (ascii >= 48 && ascii <= 57) { // números
         ascii = (ascii - 48 + offset) % 10 + 48;
       }
+      /*else if (ascii >= 160 && ascii <= 165) {
+        ascii = (ascii - 160 + offset) % 5 + 160;
+      }/*
 
       /*else {
         textynum += texto.charAt(i);
@@ -34,15 +36,14 @@ const cipher = {
     for (let i = 0; i< textoMensaje.length; i++) {
       let asciiDecif = textoMensaje.charCodeAt(i);
       if (asciiDecif >= 65 && asciiDecif <= 90) {
-        asciiDecif = (asciiDecif + 65 - offsetDescif) % 26 + 65;
+        asciiDecif = ((asciiDecif + 65 - offsetDescif) % 26 + 65);
       }
-      /*else if (asciiDecif >= 97 && asciiDecif <= 122) {// problema - regresa a posicion ascii 96, a no regresa z
-        asciiDecif = (asciiDecif - 97 - offsetDescif) % 26 + 97;
+      else if (asciiDecif >= 97 && asciiDecif <= 122) {// problema - regresa a posicion ascii 96, a no regresa z
+        asciiDecif = ((asciiDecif + 111 - offsetDescif) % 26 + 97); //sumar 14
       }
-      else if (asciiDecif >= 48 && asciiDecif <= 122) { // problema - regresa posicicion ascii 47, 0 no regresa a 9
-        asciiDecif = ((asciiDecif - 48 - offsetDescif) % 10 )+ 48;
-      }*/
-
+      else if (asciiDecif >= 48 && asciiDecif <= 57) { // problema - regresa posicicion ascii 47, 0 no regresa a 9
+        asciiDecif = ((asciiDecif +52 - offsetDescif) % 10 +48); //sumar 4
+      }
       textynumDecif += String.fromCharCode(asciiDecif);
     }
     return textynumDecif; //regresa el mensaje cidificado
