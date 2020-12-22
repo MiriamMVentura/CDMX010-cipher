@@ -19,15 +19,18 @@ header #head{
 
 header #menu{
   font-size: 20px;
-  color: #ffffff;
   display: flex;
   justify-content: flex-end;
   padding: 10px 30px;
   opacity: .5;
 }
+a{
+  color: #ffffff;
+}
 
 .inicio{
   text-align: center;
+  padding: 20px 20px;
 }
 
 .inicio h1 {
@@ -59,27 +62,34 @@ h2 {
   margin: 10px;
 }
 
-.beneficios #columna1{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: normal;
-  padding: 0px;
-}
-
+.beneficios #columna1,
 .beneficios #columna2{
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  padding: 10px;
+  padding: 0 px;
+}
+
+.icon1{
+  color: #ffffff;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 25px;
+  opacity: 0.8;
+
+}
+
+.icon1:hover{
+  cursor: text;
 }
 
 .empezar{
-
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 20px;
 }
 
 .contenido {

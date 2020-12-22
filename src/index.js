@@ -60,3 +60,11 @@ btnDelete.addEventListener('click', refrescar);
 function refrescar (){
   location.reload();
 }
+
+//agregando botón empezar
+document.getElementById('btn5').addEventListener('click', () =>{
+  document.getElementById('bienvenida').style.display='none';
+  document.getElementById('btn5').style.display='none';
+  document.getElementById('principal').style.display = 'block';
+});
+

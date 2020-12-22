@@ -9,8 +9,6 @@
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Criterios a considerar](#9-Criterios-a-considerar)
 
 ***
 
@@ -228,51 +226,17 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 
 ***
 
-## 8. Pistas, tips y lecturas complementarias
-
-### Primeros pasos
-
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-  condiciones, algo como [Atom](https://atom.io/) o
-  [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-  [UNIX Shell](https://github.com/Laboratoria/bootcamp/tree/master/topics/shell),
-  que es un programita que interpreta líneas de comando (command-line
-  interpreter) así como tener [git](https://github.com/Laboratoria/bootcamp/tree/master/topics/scm/01-git)
-  instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-  ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-  también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
-  que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows 10
-  o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-  [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-  tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-  en ese repo. La otra integrante del equipo deber hacer un fork **del
-  repositorio de su compañera** y
-  [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-  hacia el mismo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-  tu _fork_ a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-  asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-  pruebas unitarias (unit tests) con el comando `npm test`.
-7. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-8. A codear se ha dicho! :rocket:
-
 ## PRESENTACIÓN
-**Iris Cipher** está pensado y diseñado para personas que requieren compartir mensajes con textos o numeros de carácter secreto o confidencial.
-Al usar **Iris Cipher**, el usuario mantiene sus datos personales seguros ya que esta aplicación es de uso libre, no hay necesidad de registrarse o iniciar sesión de algún tipo.
-En pocos pasos, el usuario de **Iris Cipher** podrá escribir un mensaje cifrado listo para compartir, también podrá descifrar los mensajes cifrados que otro usuario le haya enviado.
+**Iris Cipher** está pensado y diseñado para personas que requieren compartir mensajes de textos de carácter secreto o confidencial.
+Al usar **Iris Cipher**, el usuario mantiene seguros sus datos personales; al ser de uso libre esta aplicación, no hay necesidad de registrarse o iniciar sesión de algún tipo.
+En pocos pasos, el usuario de **Iris Cipher** podrá escribir un mensaje cifrado listo para compartir a travez de la mensajería de su elección, también podrá descifrar los mensajes cifrados que otro usuario le haya enviado.
 
 ### DEMO
 Pasos para ejecutar la aplicación
 1. Escribe tu mensaje en el primer campo ("ABC...").
 2. Escoge un numero de seguridad para cifrar tu mensaje, recuerda compartirlo solo a quien quieras que lea tu mensaje.
 3. Pulsa el botón cifrar o descifrar según sea el caso.
-4. Tu mensaje esta listo, puedes copiarlo directo a tu portapapeles y compartirlo a quien queiras.
+4. Tu mensaje esta listo, puedes copiarlo directo a tu portapapeles y compartirlo a quien quieras.
 
 ## PROCESO DE DESARROLLO "Iris Cipher"
 ### Investigación
@@ -293,7 +257,8 @@ Pasos para ejecutar la aplicación
 ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 
 **Iris Cipher** está diseñado de manera que los usuarios no necesitan suscribirse o resgistrarse para comenzar a usar la aplicación.
-Al ejegir un numero de seguridad, el usuario esta codificando su mensaje.
+Al ejegir un numero de seguridad, el usuario esta codificando su mensaje de manera segura. A traves de unos sencillos pasos el obtiene su mensaje cifrado o descifrado con la opción de copiarlo a su portapapeles para compartirlo.
+**Iris Cipher** permite cifrar y descifrar letras mayusculas, letras minusculas y numeros, los caracteres escenciales para escribir mensajes y asugurar una correcta información.
 
 ### IDEACIÓN
 * Esquematizar
@@ -305,30 +270,27 @@ Ubicándolos en el espacio según el flujo de las acciones, identifiqué los ele
 
 
 * Procesando la investigación
-Tratando de hacer que la app diera menor esfuerzo e inmediatez al usuario busque referencias de aplicaciones similares, encontré similitudes con los de traducción donde el formato es horizontal e integran otras funciones de usabilidad como que el usuario pueda borrar, copiar o/o compartir.
-En un segundo prototipo (Wireframe) adecue el diseño a una ubicación horizontal de los elementos que ya tenía identificados incluyendo los de usabilidad para copiar, borrar y compartir.
+Tratando de hacer que la app diera menor esfuerzo e inmediatez al usuario busque referencias de aplicaciones similares, encontré similitudes con los de traducción donde integran otras funciones de usabilidad como que el usuario pueda borrar, copiar o/o compartir.
+En un segundo prototipo (Wireframe) adecue el diseño incluyendo los de usabilidad para copiar, borrar y compartir.
 
 (Insertar imagen 2do prototipo con colores)
 
 * Iteración
 Solicitando Feedback sobre el wireframe maquetado a un usuario que no ha seguido este proyecto, encontré que:
-  - si bien este diseño da una inmediatez al usuario para escribir y obtener un mensaje, da la sensación que solo puede ser usada unicamente en computadora de escritorio.
   - Sugerencia de cuidado en la percepción de figuras y fondo.
-  -	Uso de elementos visuales descriptivos (iconos) en las funciones de borrar, copiar y compartir.
   -	Alineación y equilibrio armónico de los elementos en el espacio.
   -	Equilibrio armónico de los colores.
   - Le gustaría confirmación para saber que copio a su portapapeles el mensaje final.
   - Colores más calidos y para tono juvenil y amigable.
-  - no hay un nombre de La aplicación
+  - No se percibe muy bien el nombre de la aplicación.
 
   ### PROTOTIPADO
-Tomando en cuenta los comentarios en la iteración, para definir la paleta de color y el nombre de la aplicación pensé en arquetipos de comunicación, el principal fue el de Dioses mensajeros, tomé el de la Diosa "iris" de la mitología griega, se hizo el cambio a una paleta de color más acorde al nombre y tono de la app.
+Tomando en cuenta los comentarios en la iteración, para definir una paleta de color más adecuada pensé en arquetipos de comunicación, el principal fue el de Dioses mensajeros, tomé el de la Diosa "iris" de la mitología griega, se hizo el cambio a una paleta de color más acorde al nombre y tono de la app:
 Iris --> arcoiris, iridiscente.
-Volvi al diseño inicial en vertical:
 
-Insertar imagen wireframe 3
+(Insertar imagen final wire frame)
 
-Añadí una landing page para presentar la aplicación y los beneficios de uso.
+Añadí una sección de Bienvenida para presentar la aplicación y los beneficios de uso.
 
 
 
