@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?yejvfr');
-  src:  url('fonts/icomoon.eot?yejvfr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?yejvfr') format('truetype'),
-    url('fonts/icomoon.woff?yejvfr') format('woff'),
-    url('fonts/icomoon.svg?yejvfr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vl9lqk');
+  src:  url('fonts/icomoon.eot?vl9lqk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vl9lqk') format('truetype'),
+    url('fonts/icomoon.woff?vl9lqk') format('woff'),
+    url('fonts/icomoon.svg?vl9lqk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-copy:before {
-  content: "\e92c";
+.icon-privacy_tip:before {
+  content: "\e900";
+}
+.icon-library:before {
+  content: "\e921";
+}
+.icon-address-book:before {
+  content: "\e944";
 }
 .icon-envelop:before {
   content: "\e945";
 }
-.icon-bin:before {
-  content: "\e9ac";
+.icon-bubbles:before {
+  content: "\e96c";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-heart:before {
+  content: "\e9da";
 }
 .icon-github:before {
   content: "\eab0";

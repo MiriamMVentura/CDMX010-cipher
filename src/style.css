@@ -5,13 +5,82 @@
   color: rgb(255, 255, 255);
 }
 
-h1 {
-  text-align: center;
-  padding: 20px;
-  margin: 0rem;
 
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+header #head{
+  display: flex;
+  justify-content: space-between;
+}
+
+header #menu{
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
+  opacity: .5;
+}
+
+.inicio{
+  text-align: center;
+}
+
+.inicio h1 {
+  font-size: 50px;
+  line-height: 110%;
+  margin: 5px;
+}
+
+.inicio h2{
+  font-size: 25px;
+  line-height: 120%;
+  letter-spacing: -.01em;
+  font-weight: 500;
+  opacity: .7;
+  margin: 0px ;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 120%;
+  letter-spacing: -.01em;
+  margin: 40px;
+}
+
+.beneficios{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.beneficios #columna1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  padding: 0px;
+}
+
+.beneficios #columna2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  padding: 10px;
+}
+
+.empezar{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .contenido {
   background: #6b5ebaff;
@@ -57,6 +126,7 @@ h1 {
   height: 40px;
 }
 
+.siguiente,
 .codedecode,
 .interaction {
   font-size: 18px;
@@ -64,7 +134,6 @@ h1 {
   color: rgb(247, 241, 241);
   font-family: 'Montserrat', sans-serif;
   padding: 0.5rem 0.5rem;
-
   width: 5rem;
   text-align: center;
   border: none;
@@ -104,7 +173,7 @@ h1 {
   color: #ffffff;
   vertical-align: middle;
   text-decoration: none;
-  padding: 0px 28px;
+  padding: 20px 30px;
   font-size: 25px;
 }
 
