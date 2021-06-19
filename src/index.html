@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=500, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
     <title>Iris Cipher</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet" href="font.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
   </head>
 
   <body>
     <header>
-      <div id="head">
-        <img src="img/logo.png">
+      <img src="assets/logo.png" />
+      <div class="header">
         <h1>Iris Cipher</h1>
       </div>
-      <div id="menu">
-        <a href="https://github.com/MiriamMVentura/CDMX010-cipher.git" class="inicio">¿Qué es esta app?</a>
-      </div>
+      <img src="assets/logo2.png" />
     </header>
 
     <main>
-      <section>
-        <div class="contenidoBienvenida" id="bienvenida">
-          <div class="inicio">
-            <h1>Iris Cipher App</h1>
-            <h2>¿Necesitas mandar mensajes con información privada?</h2>
-            <h2> prueba cifrar y descifrar tus mensajes, se mantendrán secretos</h2>
-          </div>
-          <h2>Iris Cipher puede ayudarte a enviar:</h2>
-          <div class="beneficios">
-            <div id= "columna1">
-              <span class="icon1 icon-bubbles"> Mensajes generales</span>
-              <span class="icon1 icon-heart"> Mensajes privados</span>
-              <span class="icon1 icon-address-book"> Información personal</span>
-            </div>
-            <div id="columna2">
-              <span class="icon1 icon-library"> Información financiera</span>
-              <span class="icon1 icon-key"> Contraseñas</span>
-              <span class="icon1 icon-privacy_tip"> Seguridad y privacidad</span>
-            </div>
-          </div>
-          <div class="empezar"><button type ="submit" class="siguiente" id="btn5">Empezar</button></div>
-        </div>
-      </section>
-
-
       <div class="contenido" id="principal">
-          <p>Escribe tu mensaje</p>
-          <textarea name="message" id="message" class="textareas" maxlength="150" rows="6" cols="40" placeholder="ABC..."></textarea>
-          <p># de seguridad</p>
-          <input type="number" class= "desplazamiento" id="displacement" placeholder="#" name="displacement" min="1" max="99">
-          <br>
-          <br>
-          <button type="submit" class="codedecode" id="btn1">Cifrar</button>
-          <button type="submit" class="codedecode" id="btn2">Descifrar</button>
-          <p>Tu mensaje secreto es:</p>
-          <textarea name="message2" id="result" class="textareas" maxlength="150" rows="6" cols="40" placeholder="..."></textarea>
-          <br>
-          <button type="submit" class="interaction" id="btn3">Copiar</button>
-          <button type ="submit" class="interaction" id="btn4">Borrar</button>
+        <div class="cifrado">
+          <label for="cifrado">Escribe tu mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            class="textareaCif"
+            maxlength="150"
+            rows="6"
+            cols="40"
+            placeholder="ABC..."
+          ></textarea>
+        </div>
+        <div class="menu">
+          <input
+            type="number"
+            class="desplazamiento"
+            id="displacement"
+            placeholder="# secreto"
+            name="displacement"
+            min="1"
+            max="99"
+          />
+          <button type="submit" class="codedecode" id="btn1">CIFRAR</button>
+          <button type="submit" class="codedecode" id="btn2">DESCIFRAR</button>
+        </div>
+        <div class="descifrado">
+          <label for="descifrado">Tu mensaje secreto es</label>
+          <textarea
+            name="message2"
+            id="result"
+            class="textareaDescif"
+            maxlength="150"
+            rows="6"
+            cols="40"
+            placeholder="..."
+          ></textarea>
+          <div class="menuDescif">
+            <img src="./assets/copy.png" class="interaction" id="btn3" />
+            <img src="./assets/delete.png" class="interaction" id="btn4" />
+          </div>
+        </div>
       </div>
-
       <div class="mensajecopiado">
         <p>¡tu mensaje se ha copiado al portapapeles!</p>
       </div>
     </main>
-
     <footer>
       <div class="social-bar">
-        <a href="https://github.com/MiriamMVentura" class="icon icon-github"></a>
-        <a href="https://www.linkedin.com/in/miriammventura/" class="icon icon-linkedin"></a>
-        <a href="mailto:miriamartv@gmail.com" class="icon icon-envelop"></a>
-    </div>
-    <div class="footer-copyright"> 2020 Miriam MVentura</div>
+        <a
+          href="https://github.com/MiriamMVentura/CDMX010-cipher"
+          class="icon icon-github"
+        ></a>
+        <p>2020 Miriam MVentura</p>
+      </div>
     </footer>
-
     <script src="index.js" type="module"></script>
     <script src="cipher.js"></script>
-
   </body>
 </html>

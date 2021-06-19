@@ -25,30 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-privacy_tip:before {
-  content: "\e900";
-}
-.icon-library:before {
-  content: "\e921";
-}
-.icon-address-book:before {
-  content: "\e944";
-}
-.icon-envelop:before {
-  content: "\e945";
-}
-.icon-bubbles:before {
-  content: "\e96c";
-}
-.icon-key:before {
-  content: "\e98d";
-}
-.icon-heart:before {
-  content: "\e9da";
-}
 .icon-github:before {
   content: "\eab0";
-}
-.icon-linkedin:before {
-  content: "\eac9";
 }
